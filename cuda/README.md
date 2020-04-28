@@ -1,7 +1,7 @@
 # Cuda
 
-In order to use the cuda package, the cuda toolkit from nvidia needs to be installed on the host system. 
- CUDA backend for DNN module requires CC (Compute Capability) 5.3 or higher. Check your GPU https://developer.nvidia.com/cuda-gpus
+In order to use the cuda package, the cuda toolkit from nvidia needs to be installed on the host system.
+CUDA backend for DNN module requires CC (Compute Capability) 5.3 or higher. Check your GPU https://developer.nvidia.com/cuda-gpus
 
 Please see https://docs.nvidia.com/cuda/index.html for more information.
 
@@ -25,13 +25,14 @@ net.SetPreferableTarget(gocv.NetTargetType(gocv.NetTargetCUDA))
 ```
 
 ## Install Cuda
+
 Download and install packages from https://developer.nvidia.com/cuda-downloads
 
-	example 'cuda_10.2.89_440.33.01_linux.run'
+    example 'cuda_10.2.89_440.33.01_linux.run'
 
 Download and install packages from https://developer.nvidia.com/rdp/cudnn-archive
 
-	example 'cuDNN Runtime Library for Ubuntu18.04 (Deb)' and 'cuDNN Developer Library for Ubuntu18.04 (Deb)'
+    example 'cuDNN Runtime Library for Ubuntu18.04 (Deb)' and 'cuDNN Developer Library for Ubuntu18.04 (Deb)'
 
 ## Compiling opencv with cuda
 
@@ -41,13 +42,13 @@ Simply issue the command `make install_cuda` and you should be good to go.
 
 If you need static opencv libraries
 
-	make install_cuda BUILD_SHARED_LIBS=OFF
+    make install_cuda BUILD_SHARED_LIBS=OFF
 
-Then finally verify that it is all working 
+Then finally verify that it is all working
 
-    cd $GOPATH/src/gocv.io/x/gocv
-	go run ./cmd/cuda/main.go
-	
+    cd $GOPATH/src/github.com/pioz/gocv
+    go run ./cmd/cuda/main.go
+
 You should see something along the lines of:
 
     gocv version: 0.19.0

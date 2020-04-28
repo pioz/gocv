@@ -19,8 +19,8 @@ import (
 	"fmt"
 	"strings"
 
-	"gocv.io/x/gocv"
-	"gocv.io/x/gocv/contrib"
+	"github.com/pioz/gocv"
+	"github.com/pioz/gocv/contrib"
 )
 
 var (

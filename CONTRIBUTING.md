@@ -69,6 +69,7 @@ go test ./contrib/.
 ```
 
 If you want to run an individual test, you can provide a RegExp to the `-run` argument:
+
 ```
 go test -run TestMat
 ```
@@ -86,7 +87,7 @@ This section provides a short description of one of many possible workflows you 
 Assuming you have already forked the `gocv` repo, you need to add a new `git remote` which will point to your GitHub fork. Notice below that you **must** `cd` to `gocv` repo directory before you add the new `git remote`:
 
 ```shell
-cd $GOPATH/src/gocv.io/x/gocv
+cd $GOPATH/src/github.com/pioz/gocv
 git remote add gocv-fork https://github.com/YOUR_GH_HANDLE/gocv.git
 ```
 
@@ -97,10 +98,10 @@ You should now see your new `git remote` when running the command below:
 ```shell
 git remote -v
 
-gocv-fork	https://github.com/YOUR_GH_HANDLE/gocv.git (fetch)
-gocv-fork	https://github.com/YOUR_GH_HANDLE/gocv.git (push)
-origin	        https://github.com/hybridgroup/gocv (fetch)
-origin	        https://github.com/hybridgroup/gocv (push)
+gocv-fork https://github.com/YOUR_GH_HANDLE/gocv.git (fetch)
+gocv-fork https://github.com/YOUR_GH_HANDLE/gocv.git (push)
+origin          https://github.com/hybridgroup/gocv (fetch)
+origin          https://github.com/hybridgroup/gocv (push)
 ```
 
 Before you create a new branch from `dev` you should fetch the latests commits from the `dev` branch:

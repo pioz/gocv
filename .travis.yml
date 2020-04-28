@@ -5,29 +5,29 @@ dist: trusty
 # language is go
 language: go
 go:
-  - "1.14"
-go_import_path: gocv.io/x/gocv
+  - '1.14'
+go_import_path: github.com/pioz/gocv
 
 addons:
   apt:
     packages:
-    - libgmp-dev
-    - build-essential
-    - cmake
-    - git
-    - libgtk2.0-dev
-    - pkg-config
-    - libavcodec-dev
-    - libavformat-dev
-    - libswscale-dev
-    - libtbb2
-    - libtbb-dev
-    - libjpeg-dev
-    - libpng-dev
-    - libtiff-dev
-    - libjasper-dev
-    - libdc1394-22-dev
-    - xvfb
+      - libgmp-dev
+      - build-essential
+      - cmake
+      - git
+      - libgtk2.0-dev
+      - pkg-config
+      - libavcodec-dev
+      - libavformat-dev
+      - libswscale-dev
+      - libtbb2
+      - libtbb-dev
+      - libjpeg-dev
+      - libpng-dev
+      - libtiff-dev
+      - libjasper-dev
+      - libdc1394-22-dev
+      - xvfb
 
 before_install:
   - ./travis_build_opencv.sh
