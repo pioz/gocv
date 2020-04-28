@@ -51,7 +51,7 @@ import (
 var MatProfile *pprof.Profile
 
 func init() {
-	profName := "gocv.io/x/gocv.Mat"
+	profName := "github.com/pioz/gocv.Mat"
 	MatProfile = pprof.Lookup(profName)
 	if MatProfile == nil {
 		MatProfile = pprof.NewProfile(profName)
